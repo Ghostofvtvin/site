@@ -1,0 +1,310 @@
+body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    color: #343A40;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+header{
+    min-height: 64px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0px 0px 34px rgba(208, 208, 208, 0.4));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    z-index: 9999999999999999999;
+}
+header nav{
+    margin-right: 100px;
+}
+.header-link{
+    text-decoration: none;
+    font-family: Poppins, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #343A40;
+    margin: 10px;
+}
+.page1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://fishingsblog.ru/wp-content/uploads/2017/06/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C-%D1%80%D1%8B%D0%B1%D0%B0%D0%BA%D0%B0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+}
+.logo-img{
+    margin: 10px;
+}
+.name-page1{
+    margin: 50px;
+    margin-left: 20vw;
+    color: #343A40;
+}
+.name-page1-big{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 88px;
+}
+.name-page1-small{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+}
+.name-description{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.btn_count-page1{
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.count-page1{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.count-page1-img{
+    margin-right: 10px;
+}
+.block_of_counts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+}
+.block_of_count{
+    width: 275px;
+    height: 200px;
+    box-shadow: 0px 0px 34px rgba(208, 208, 208, 0.4);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transform: translateY(-100px);
+    background-color: #FFF;
+    margin: 12px;
+}
+.block_of_count b{
+    font-family: Poppins, Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 78px;
+}
+.block_of_count span{
+    font-family: Poppins, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+.block_of_blocks{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    /* column-count: 3; */
+    margin-left: 20vw;
+    margin-right: 20vw;
+    justify-content: center;
+}
+.block{
+    width: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 40px;
+    margin: 20px;
+    height: max-content;
+    font-family: Poppins, Arial;
+    padding-top: 80px;
+    margin-top: 60px;
+}
+.block-text{
+    width: 250px;
+    display: flex;
+    min-height: 300px;
+    justify-content: center;
+    font-size: 42px;
+    padding: 40px;
+    margin: 20px;
+    height: max-content;
+}
+.img-block{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: #FFF;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-120px);
+}
+
+footer{
+    background: #122791;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Poppins, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+footer *{
+    text-align: center;
+}
+footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    display: none;
+}
+.menu-btn__burger {
+    width: 50px;
+    height: 3px;
+    background: #343A40;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #343A40;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.header-mobile{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform: translateX(100vw);
+}
+.header-mobile nav{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-mobile-link{
+    text-decoration: none;
+    font-size: 7vw;
+    margin: 20px;
+    color: #343A40;
+
+}
+@media screen and (max-width: 850px) {
+    .menu-btn{
+        display: flex;
+    }
+    .header-link{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .block_of_blocks{
+        column-count: 1;
+        grid-template-columns: none;
+    }
+    .block-text{
+        min-height: 0;
+    }
+    
+}
+
+@media (orientation: portrait){
+    .fishlogo{
+        margin-left: 5vw;
+    }
+    .fishlogo-img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .logo-text{
+        width: 40vw;
+    }
+    .gets-text{
+        padding: 0;
+    }
+    
+}
+@media (max-width: 600px) {
+    footer {
+      padding: 0.01px;
+    }
+  }
+  
